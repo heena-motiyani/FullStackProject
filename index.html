@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Ninjas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+   
+
+    <script>
+
+        onload = start;
+
+
+
+        function start() {
+
+            var i = 1;
+
+
+
+            function Move() {
+
+                i = (i % 5) + 1; // 5 is the Number of image in slider
+
+                document.getElementById('id' + i).checked = true;
+
+            }
+
+            setInterval(Move, 3000); //change img in 3 sec
+
+        }
+
+    </script>
+
+    <style>
+
+        body,
+
+        html {
+
+            width: 100%;
+
+            height: 100%;
+
+            margin: 0;
+
+            overflow-X: hidden;
+
+
+
+        }
+
+
+
+        #id1,
+
+        #id2,
+
+        #id3,
+
+        #id4,
+
+        #id5 {
+
+            display: none;
+
+        }
+
+
+
+        .container {
+
+            margin: 20 auto;
+
+            position: relative;
+
+            width: 100%;
+
+            height: 0;
+
+            padding-bottom: 40%;
+
+            user-select: none;
+
+            background-color: #1c1c1c;
+            height: ;
+
+            
+
+        }
+
+
+
+        .container .slide_img {
+
+            position: absolute;
+
+            width: 100%;
+
+            height: 100%;
+        }
+        .container .slide_img img {
+
+            width: inherit;
+
+            height: inherit;
+
+        }
+        .container #nav_slide {
+
+            width: 100%;
+
+            bottom: 12%;
+
+            height: 11px;
+
+            position: absolute;
+
+            text-align: center;
+
+            z-index: 99;
+
+            cursor: default;
+
+        }
+        #nav_slide .dots {
+
+            width: 18px;
+
+            height: 18px;
+
+            margin: 0 4px;
+
+            position: relative;
+
+            border-radius: 100%;
+
+            display: inline-block;
+
+            background-color: rgba(0, 0, 0, 0.6);
+
+            transition: .4s;
+
+        }
+        #nav_slide .dots:hover {
+
+            cursor: pointer;
+
+            background-color: rgba(255, 255, 255, 0.9);
+
+            transition: .25s
+
+        }
+        .slide_img {
+
+            z-index: -1;
+
+        }
+        #id1:checked~#one,
+
+        #id2:checked~#two,
+
+        #id3:checked~#three,
+
+        #id4:checked~#four,
+
+        #id5:checked~#five {
+
+            z-index: 9;
+        }
+
+        #id1:checked~#nav_slide #dot1,
+
+        #id2:checked~#nav_slide #dot2,
+
+        #id3:checked~#nav_slide #dot3,
+
+        #id4:checked~#nav_slide #dot4,
+
+        #id5:checked~#nav_slide #dot5 {
+
+            background-color: rgba(255, 255, 255, .9);
+
+        }
+
+        @media screen and (max-width: 685px) {
+
+            .container {
+
+                border: none;
+
+                width: 100%;
+
+                height: 0;
+
+                padding-bottom: 55%;
+
+            }
+        }
+            label span {
+
+                font-size: 50pt;
+
+            }
+            #nav_slide .dots {
+
+                width: 12px;
+
+                height: 12px;
+
+            }
+
+        
+            
+.parallax {
+  /* The image used */
+  background-image: url('img7.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax1
+            {
+               background-image: url('img6.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+            }
+        
+.parallax2
+        {
+             background-image: url('pizza.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+            }
+        .parallax3
+        {
+             background-image: url('burgers.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+            
+        }
+        .parallax4
+        {
+  background-image: url('desserts.jpg');
+  height: 100%;   
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+            
+        }
+        
+        
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+    
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container1 {
+  padding: 2px 16px;
+   
+}
+       
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Food Ninja</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Starters</a></li>
+                <li><a href="#">Veg Mains</a></li>
+                <li><a href="#">Pizzas</a></li>
+                <li><a href="#">Burgers and wraps</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="#" class="login">Sign Up</a></li>
+                <li><a href="#" class="login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+
+ <input type="radio" id="id1" name="images" checked />
+
+        <input type="radio" id="id2" name="images" />
+
+        <input type="radio" id="id3" name="images" />
+
+        <input type="radio" id="id4" name="images" />
+
+        <input type="radio" id="id5" name="images" />
+
+
+
+        <div class="slide_img" id="one">
+
+            <img src="img1.jpg">
+
+        </div>
+
+
+
+        <div class="slide_img" id="two">
+
+            <img src="img2.jpg">
+
+        </div>
+
+
+
+        <div class="slide_img" id="three">
+
+            <img src="img3.jpg">
+        </div>
+
+
+
+        <div class="slide_img" id="four">
+
+            <img src="img4.jpg">
+
+        </div>
+
+
+
+        <div class="slide_img" id="five">
+
+            <img src="img5.jpg">
+
+           
+        </div>
+
+
+
+        <div id="nav_slide">
+
+            <label for="id1" class="dots" id="dot1"></label>
+
+            <label for="id2" class="dots" id="dot2"></label>
+
+            <label for="id3" class="dots" id="dot3"></label>
+
+            <label for="id4" class="dots" id="dot4"></label>
+
+            <label for="id5" class="dots" id="dot5"></label>
+
+        </div>
+
+        
+    </div>
+    <br>
+    <br>
+   
+    
+    
+<div style="height:100px;background-color:#daddd4;font-size:36px; text-align: center"> Varieties of Food</div>
+    
+  <div class="parallax" > <a href="#" >Starter</a></div>
+    <div  style="height:100px;background-color:#daddd4;font-size:36px; text-align: center"></div>
+   
+    
+
+
+<div class="parallax1"><a href="#">Veg Mains</a></div>
+   <div  style="height:100px;background-color:#daddd4;font-size:36px; text-align: center"></div>
+   
+    
+
+
+<div class="parallax2"><a href="#">Pizzas</a></div>
+   
+    <div  style="height:100px;background-color:#daddd4;font-size:36px; text-align: center"></div>
+   
+    
+
+
+<div class="parallax3"><a href="#"> Burgers and wraps </a></div>
+    <div  style="height:100px;background-color:#daddd4;font-size:36px; text-align: center"></div>
+    
+    <div class="parallax4"><a href="#">Desserts</a></div>
+    <div  style="height:100px;background-color:#daddd4;font-size:36px; text-align: center"></div>
+    
+    
+    <h2>Card</h2>
+
+<div class="card">
+  <img src="img1.jpg" alt="Avatar" style="width:100%">
+  <div class="container1">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+   
+
+</body></html>
