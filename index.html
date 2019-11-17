@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet"> 
     
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="animate.css">
 
 
 
@@ -255,56 +257,41 @@
             }
 
 
-
-.parallax {
-  background-image: url('img/img7.jpg');
+.parallax
+        {
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+             }
+        
+#parallax0 {
+  background-image: url('img/img7.jpg');
+ 
 }
-.parallax1
+#parallax1
             {
   background-image: url('img/img6.jpg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
             }
 
-.parallax2
+#parallax2
         {
-           
   background-image: url('img/pizza.jpg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
             }
-        .parallax3
+        
+        #parallax3
         {
             
   background-image: url('img/burgers.jpg');
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  
 
         }
-        .parallax4
+        #parallax4
         {
             
   background-image: url('img/desserts.jpg');
-            
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
         }
 
@@ -347,81 +334,49 @@
         }
         .navbar-default
         {
-            background-color: rgba(250,120,0,0.7);
+            background-color: rgba(190, 64, 132, 0.68);
         
         }
-        nav a
+        nav 
         {
             color: purple;
         }
-      div p
+    .content
         {
-   position: relative;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) ;
+    font-weight:600;
+    margin-left: 20px;
+    margin-right: 20px;        
+            
         }
+        
     .parallax a
         {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) ;
-    font-size: 50px;
-        
-    color:  #1c1c1c;
+    margin-right: -50%;        
+    font-size: 50px;  
+    color:  deeppink;
     font-family: 'Lobster', cursive;
         }
- .parallax1 a
+ 
+    .customdiv
         {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) ;
-    font-size: 50px;
-        
-    color:  #1c1c1c;
-    font-family: 'Lobster', cursive;
-            
-        }
- .parallax2 a
-        {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) ;
-    font-size: 50px;
-        
-    color:  #1c1c1c;
-    font-family: 'Lobster', cursive;
-            
-        }
-    .parallax3 a
-        {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) ;
-    font-size: 50px;
-        
-    color:  #1c1c1c;
-    font-family: 'Lobster', cursive;
-            
-        }
-     
- .parallax4 a
-        {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) ;
-    font-size: 50px;
-        
-    color:  #1c1c1c;
-    font-family: 'Lobster', cursive;
-            
-        }
+border-radius: 50%;
+height: 100%;            
+width: 50%;
+padding-top: 10%;         
+background: #ef139a;
+}
 
+        
+
+        
         
 
     </style>
@@ -433,7 +388,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Food Ninja</a>
+                <a class="navbar-brand" href="#">Food Ninjas</a>
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="#starters">Starters</a></li>
@@ -518,32 +473,32 @@
 
     </div>
     
-<div style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive; "><p>  Offering you a wide range of Food.Big City Variety,small Town price.</p> </div>
+<div style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive; " ><p class="content">  Offering you a wide range of Food.Big City Variety,small Town price.</p> </div>
 
-  <div class="parallax" > <a href="#starters">Starter</a></div>
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive;" ><p>Have you had your break today? Order our mouth watering veg mains dishes to make your break tasty.</p></div>
-
-
-
-
-<div class="parallax1"><a href="#mains">Veg Mains</a></div>
-   <div  style="height:300px;background-color:;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursiver;  "><p>What's your eating mood today? Ordering your favourite food is just a click away.</p></div>
+  <div id="parallax0" class="parallax" > <a href="#starters">Starter</a></div>
+    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive;" ><p class="content">Have you had your break today? Order our mouth watering veg mains dishes to make your break tasty.</p></div>
 
 
 
 
-<div class="parallax2"><a href="#pizzas">Pizzas</a></div>
-
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive; "><p>Serving a lip-smacking food is our passion.The flavours come from the culture of nature.We take the teachings of nature.</p></div>
-
+<div id="parallax1" class="parallax" ><a href="#mains">Veg Mains</a></div>
+   <div  style="height:300px;background-color:;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursiver;" ><p class="content">What's your eating mood today? Ordering your favourite food is just a click away.</p></div>
 
 
 
-<div class="parallax3"><a href="#burgers"> Burgers and wraps </a></div>
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive"><p> We care for your precious time.Hot, tasty food will reach you in 20mins.A hungry must not go to food the food will go to hungry.Get served as an emperor.</p></div>
 
-    <div class="parallax4"><a href="#desserts">Desserts</a></div>
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive"><p>Start your food journey with Food Ninjas today!!</p></div>
+<div id="parallax2" class="parallax"><a href="#pizzas">Pizzas</a></div>
+
+    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive; " ><p class="content">Serving a lip-smacking food is our passion.The flavours come from the culture of nature.We take the teachings of nature.</p></div>
+
+
+
+
+<div id="parallax3" class="parallax"><a href="#burgers"> Burgers and wraps </a></div>
+    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive" ><p class="content"> We care for your precious time.Hot, tasty food will reach you in 20mins.A hungry must not go to food the food will go to hungry.Get served as an emperor.</p></div>
+
+    <div id="parallax4" class="parallax"><a href="#desserts">Desserts</a></div>
+    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive" ><p class="content">Start your food journey with Food Ninjas today!!</p></div>
 
 
     <h2 id="starters">Starters</h2>
@@ -554,7 +509,7 @@
 <div class="card">
   <img src="img/paneertikka.jpg" alt="Starters" style="width:100%">
   <div class="cardimg">
-    <h4><b>Panner Tikka</b></h4>
+    <h4><b>Paneer Tikka</b></h4>
     <p>350 Rs.</p>
   </div>
 </div>
@@ -750,7 +705,8 @@
   <img src="img/wrap.jpg" alt="Burgers" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Crispy Veg Wrap</b></h4>
-    <p>550 Rs.</p>
+      <p>550 Rs.</p>
+      
   </div>
 </div>
     
@@ -813,5 +769,61 @@
     </div>
     </div>
     
-    <br><br><br><br> 
+    <br><br><br><br>
+    
+
+    <footer>
+        <div class="contact">
+    <h2> Contact Details</h2>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="customdiv">
+            <img src="img/heena.png" width="100%"; style="border-radius: 50%">
+                <div>
+                 <h4 style="text-align: center">Heena Motiyani</h4>
+                </div>
+                </div>
+       
+            </div>
+            
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="customdiv">
+            <img src="img/contact.png" width="100%"; style="border-radius: 50%">
+            <div>
+                <h4 style="text-align: center">Meetanshi Gupta</h4>
+                </div>    
+            </div>
+            </div>
+            
+            
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            
+            
+            <div class="customdiv">
+                 
+            <img src="img/meetanshi.png" width="100%"; style="border-radius: 50%">
+            <h4 style="text-align: center">Megha Agarwal</h4>
+                
+            
+                </div>
+            <div class="back" style="visibility: hidden;">
+                <h4> Btech 3rd year</h4>
+                <p>megha.agarwal_cs17@gla.ac.in</p>
+                </div>
+                
+                 
+             
+            </div>
+            </div>
+    
+        
+        
+    <br><br>    
+
+        
+    </footer>
+
+    
+    
+    
+    
 </body></html>
