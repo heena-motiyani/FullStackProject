@@ -16,10 +16,13 @@
     
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
     
-    <link rel="stylesheet" href="animate.css">
-
-
-
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet"> 
+    
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    
+    
 
     <script>
 
@@ -61,8 +64,6 @@
 
             overflow-X: hidden;
 
-
-
         }
 
 
@@ -83,7 +84,7 @@
 
 
 
-        .container {
+        .containerimg {
 
             margin: 20 auto;
 
@@ -106,7 +107,7 @@
 
 
 
-        .container .slide_img {
+        .containerimg .slide_img {
 
             position: absolute;
 
@@ -119,7 +120,7 @@
 
 
 
-        .container .slide_img img {
+        .containerimg .slide_img img {
 
             width: inherit;
 
@@ -128,7 +129,7 @@
         }
 
 
-        .container #nav_slide {
+        .containerimg #nav_slide {
 
             width: 100%;
 
@@ -334,13 +335,11 @@
         }
         .navbar-default
         {
-            background-color: rgba(190, 64, 132, 0.68);
+            background-color: #e85555;
+            
         
         }
-        nav 
-        {
-            color: purple;
-        }
+     
     .content
         {
     position: relative;
@@ -349,7 +348,9 @@
     transform: translate(-50%, -50%) ;
     font-weight:600;
     margin-left: 20px;
-    margin-right: 20px;        
+    margin-right: 20px;  
+    animation: glow 1s infinite alternate;
+   
             
         }
         
@@ -368,16 +369,109 @@
     .customdiv
         {
 border-radius: 50%;
-height: 100%;            
+            
 width: 50%;
-padding-top: 10%;         
+padding-top: 6%;            
+        
 background: #ef139a;
 }
-
         
 
+         *{
+        padding: 0px;
+        margin: 0px;
         
+    }
+    .center{
+        position: relative;
+            
+        text-align: center;
+    }
+    .button{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+        box-shadow: 0px 5px 15px -5px pink;
+        overflow: hidden;
+        position: relative;
+        color: deeppink;
+    }
+    .button i{
+        font-size: 26px;
+        line-height: 60px;
+        transition: .2s linear;
+    }
+    .button:hover i{
+        transform: scale(1.5);
+        color: white;
         
+    }
+    .button::before
+    {
+        content: '';
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background-color: deeppink;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+        
+    }
+    .button:hover::before{
+        animation: aaa .7s 1;
+        top: -10%;
+        left: -10%;
+    }
+    @keyframes aaa
+    {
+        0%{
+            left: -110%;
+        top: 90%;
+                    }
+    
+    50%{
+           left: 10%;
+        top: -30%;
+            }
+    100%{
+        top: -50%;
+        left: -10%;
+    }            
+
+    }
+       
+        footer
+        {
+            background-color: deeppink;
+           
+     
+            
+        }
+        
+    @keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px purple;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #d465a1;
+  }
+}    
+   .contentdiv
+        {
+            height:300px;
+            font-size:36px; 
+            text-align: center; 
+            color: #4a4aa7;
+            font-family: 'Dancing Script', cursive;
+            background-image: url(img/contentimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
 
     </style>
 
@@ -401,7 +495,7 @@ background: #ef139a;
         </div>
     </nav>
 
-    <div class="container">
+    <div class="containerimg">
 
 
 
@@ -473,32 +567,32 @@ background: #ef139a;
 
     </div>
     
-<div style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive; " ><p class="content">  Offering you a wide range of Food.Big City Variety,small Town price.</p> </div>
+<div  class="contentdiv" ><p class="content">  Offering you a wide range of Food.Big City Variety,small Town price.</p> </div>
 
   <div id="parallax0" class="parallax" > <a href="#starters">Starter</a></div>
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive;" ><p class="content">Have you had your break today? Order our mouth watering veg mains dishes to make your break tasty.</p></div>
+    <div   class="contentdiv" ><p class="content">Have you had your break today? Order our mouth watering veg mains dishes to make your break tasty.</p></div>
 
 
 
 
 <div id="parallax1" class="parallax" ><a href="#mains">Veg Mains</a></div>
-   <div  style="height:300px;background-color:;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursiver;" ><p class="content">What's your eating mood today? Ordering your favourite food is just a click away.</p></div>
+   <div  class="contentdiv" ><p class="content">What's your eating mood today? Ordering your favourite food is just a click away.</p></div>
 
 
 
 
 <div id="parallax2" class="parallax"><a href="#pizzas">Pizzas</a></div>
 
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive; " ><p class="content">Serving a lip-smacking food is our passion.The flavours come from the culture of nature.We take the teachings of nature.</p></div>
+    <div  class="contentdiv"><p class="content">Serving a lip-smacking food is our passion.The flavours come from the culture of nature.We take the teachings of nature.</p></div>
 
 
 
 
 <div id="parallax3" class="parallax"><a href="#burgers"> Burgers and wraps </a></div>
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive" ><p class="content"> We care for your precious time.Hot, tasty food will reach you in 20mins.A hungry must not go to food the food will go to hungry.Get served as an emperor.</p></div>
+    <div  class="contentdiv" ><p class="content"> We care for your precious time.Hot, tasty food will reach you in 20mins.A hungry must not go to food the food will go to hungry.Get served as an emperor.</p></div>
 
     <div id="parallax4" class="parallax"><a href="#desserts">Desserts</a></div>
-    <div  style="height:300px;font-size:36px; text-align: center;  color: #4a4aa7; font-family: 'Dancing Script', cursive" ><p class="content">Start your food journey with Food Ninjas today!!</p></div>
+    <div   class="contentdiv"><p class="content">Start your food journey with Food Ninjas today!!</p></div>
 
 
     <h2 id="starters">Starters</h2>
@@ -507,7 +601,7 @@ background: #ef139a;
 <div class="row"> 
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
-  <img src="img/paneertikka.jpg" alt="Starters" style="width:100%">
+  <img src="img/paneertikka.jpg" alt="Starters" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Paneer Tikka</b></h4>
     <p>350 Rs.</p>
@@ -561,7 +655,7 @@ background: #ef139a;
 <div class="row"> 
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
-  <img src="img/vegpulao.jpg" alt="Mains" style="width:100%">
+  <img src="img/vegpulao.jpg" alt="Mains" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Veg Pulao</b></h4>
     <p>400 Rs.</p>
@@ -583,7 +677,7 @@ background: #ef139a;
     
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
-  <img src="img/vegrice.jpg" alt="Mains" style="width:100%">
+  <img src="img/vegrice.jpg" alt="Mains" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Veg Rice</b></h4>
     <p>380 Rs.</p>
@@ -615,7 +709,7 @@ background: #ef139a;
 <div class="row"> 
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
-  <img src="img/cheesepizza.jpg" alt="Pizzas" style="width:100%">
+  <img src="img/cheesepizza.jpg" alt="Pizzas" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Cheese Burst </b></h4>
     <p>545 Rs.</p>
@@ -757,7 +851,7 @@ background: #ef139a;
 
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
-  <img src="img/cupcakes.jpg" alt="Desserts" style="width:100%">
+  <img src="img/cupcakes.jpg" alt="Desserts" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Cup Cakes</b></h4>
     <p>100-700 Rs.</p>
@@ -770,6 +864,8 @@ background: #ef139a;
     </div>
     
     <br><br><br><br>
+     <br><br><br><br>
+    <br><br><br><br>
     
 
     <footer>
@@ -777,9 +873,10 @@ background: #ef139a;
     <h2> Contact Details</h2>
     <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="customdiv">
-            <img src="img/heena.png" width="100%"; style="border-radius: 50%">
+            <img src="img/heena.png" width="100%"; style="border-radius: 50%"; height="70px">
                 <div>
-                 <h4 style="text-align: center">Heena Motiyani</h4>
+                 <h4 style="text-align: center; font-family: 'Abril Fatface', cursive;color: white">Heena Motiyani</h4>
+                    <br>
                 </div>
                 </div>
        
@@ -787,9 +884,10 @@ background: #ef139a;
             
         <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="customdiv">
-            <img src="img/contact.png" width="100%"; style="border-radius: 50%">
+            <img src="img/contact.png" width="100%"; style="border-radius: 50%"; height="70px">
             <div>
-                <h4 style="text-align: center">Meetanshi Gupta</h4>
+                <h4 style="text-align: center; font-family: 'Abril Fatface'; color: white">Meetanshi Gupta</h4>
+                <br>
                 </div>    
             </div>
             </div>
@@ -800,8 +898,9 @@ background: #ef139a;
             
             <div class="customdiv">
                  
-            <img src="img/meetanshi.png" width="100%"; style="border-radius: 50%">
-            <h4 style="text-align: center">Megha Agarwal</h4>
+            <img src="img/meetanshi.png" width="100%"; style="border-radius: 50%"; height="70px">
+            <h4 style="text-align: center; font-family: 'Abril Fatface'; color: white">Megha Agarwal</h4>
+                <br>
                 
             
                 </div>
@@ -809,21 +908,28 @@ background: #ef139a;
                 <h4> Btech 3rd year</h4>
                 <p>megha.agarwal_cs17@gla.ac.in</p>
                 </div>
-                
-                 
-             
+                   
             </div>
             </div>
-    
-        
-        
     <br><br>    
-
+        
+<div class="social">
+    
+      <h2>  Follow us at</h2>
+    
+    <div class="center">
+       <a href="" class="button"><i class="fa fa-facebook" ></i></a>
+       <a href="" class="button"><i class="fa fa-twitter" ></i></a>
+       <a href="" class="button"><i class="fa fa-google" ></i></a>
+       <a href="" class="button"><i class="fa fa-youtube" ></i></a>
+       <a href="" class="button"><i class="fa fa-instagram" ></i></a>
+       
+       
+       
+   </div>
+        
+        </div>
         
     </footer>
-
-    
-    
-    
     
 </body></html>
