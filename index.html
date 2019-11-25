@@ -4,259 +4,158 @@
     <title>Food Ninjas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One|Shojumaru&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Trocchi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
-    
-    <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet"> 
-    
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet"> 
-    
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet"> 
-    
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   
      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+   
     <link rel="stylesheet" href="css/bootstrap-grid.css">
-    
-    
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   
+   
     <script>
-
         onload = start;
 
-
-
         function start() {
-
             var i = 1;
 
-
-
             function Move() {
-
                 i = (i % 5) + 1; // 5 is the Number of image in slider
-
                 document.getElementById('id' + i).checked = true;
-
             }
-
             setInterval(Move, 2000); //change img in 3 sec
-
         }
-
     </script>
-
     <style>
-
         body,
-
         html {
-
             width: 100%;
-
             height: 100%;
-
             margin: 0;
-
+            padding: 0;
             overflow-X: hidden;
-
         }
-
-
 
         #id1,
-
         #id2,
-
         #id3,
-
         #id4,
-
         #id5 {
-
             display: none;
-
         }
-
-
 
         .containerimg {
-
             margin: 20 auto;
-
             position: relative;
-
             width: 100%;
-
             height: 0;
-
             padding-bottom: 40%;
-
             user-select: none;
-
             background-color: #1c1c1c;
-            height: ;
-
-
+            margin-top: 90px; 
 
         }
-
-
 
         .containerimg .slide_img {
-
             position: absolute;
-
             width: 100%;
-
             height: 100%;
 
-
         }
-
-
 
         .containerimg .slide_img img {
-
             width: inherit;
-
             height: inherit;
-
         }
-
 
         .containerimg #nav_slide {
-
             width: 100%;
-
             bottom: 12%;
-
             height: 11px;
-
             position: absolute;
-
             text-align: center;
-
             z-index: 99;
-
             cursor: default;
-
         }
-
-
 
         #nav_slide .dots {
-
             width: 18px;
-
             height: 18px;
-
             margin: 0 4px;
-
             position: relative;
-
             border-radius: 100%;
-
             display: inline-block;
-
             background-color: rgba(0, 0, 0, 0.6);
-
             transition: .4s;
-
         }
-
-
 
         #nav_slide .dots:hover {
-
             cursor: pointer;
-
             background-color: rgba(255, 255, 255, 0.9);
-
             transition: .25s
-
         }
-
-
 
         .slide_img {
-
             z-index: -1;
-
         }
-
-
 
         #id1:checked~#one,
-
         #id2:checked~#two,
-
         #id3:checked~#three,
-
         #id4:checked~#four,
-
         #id5:checked~#five {
-
             z-index: 9;
 
-
-
         }
-
-
 
         #id1:checked~#nav_slide #dot1,
-
         #id2:checked~#nav_slide #dot2,
-
         #id3:checked~#nav_slide #dot3,
-
         #id4:checked~#nav_slide #dot4,
-
         #id5:checked~#nav_slide #dot5 {
-
             background-color: rgba(255, 255, 255, .9);
-
         }
-
-
 
         @media screen and (max-width: 685px) {
-
             .container {
-
                 border: none;
-
                 width: 100%;
-
                 height: 0;
-
                 padding-bottom: 55%;
-
             }
         }
 
-
-
             label span {
-
                 font-size: 50pt;
-
             }
-
 
             #nav_slide .dots {
-
                 width: 12px;
-
                 height: 12px;
-
             }
-
 
 .parallax
         {
@@ -265,8 +164,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+            
              }
-        
+       
 #parallax0 {
   background-image: url('img/img7.jpg');
  
@@ -274,72 +174,40 @@
 #parallax1
             {
   background-image: url('img/img6.jpg');
-
             }
-
 #parallax2
         {
   background-image: url('img/pizza.jpg');
             }
-        
+       
         #parallax3
         {
-            
+           
   background-image: url('img/burgers.jpg');
-  
-
+ 
         }
         #parallax4
         {
-            
+           
   background-image: url('img/desserts.jpg');
-
         }
-
 
  .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   min-height: 300px;
-
 }
-
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 .cardimg {
   padding: 2px 16px;
-
 }
         h2{
             margin: 15px;
         }
 
-.navbar-header a
-        {
-            font-family: 'Electrolize', sans-serif;
-            font-size: 50px;
-                
-        }
-        .navbar-nav
-        {
-            margin-left: 70px;
-        }
-        .navbar-nav a
-        {
-            font-family: 'Righteous',sans-serif;
-            font-size: 18px;
-           
-            
-        }
-        .navbar-default
-        {
-            background-color: #e85555;
-            
-        
-        }
-     
+    
     .content
         {
     position: relative;
@@ -347,44 +215,46 @@
     left: 50%;
     transform: translate(-50%, -50%) ;
     font-weight:600;
-    margin-left: 20px;
-    margin-right: 20px;  
-    animation: glow 1s infinite alternate;
-   
-            
+    margin-left: 1px;
+    margin-right: 20px; 
+    animation: glow1 1s infinite alternate;
+            color:black;
+                            
         }
-        
+       
     .parallax a
         {
     position: relative;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%) ;
-    margin-right: -50%;        
-    font-size: 50px;  
+/*    margin-right: -50%;       */
+   font-weight: bolder;
     color:  deeppink;
     font-family: 'Lobster', cursive;
+            color: white;
+            text-decoration: none;
+            font-size:90px;
         }
- 
+        
     .customdiv
         {
 border-radius: 50%;
-            
+           
 width: 50%;
-padding-top: 6%;            
-        
-background: #ef139a;
-}
-        
+padding-top: 6%;           
+       
 
+}
+       
          *{
         padding: 0px;
         margin: 0px;
-        
+       
     }
     .center{
         position: relative;
-            
+           
         text-align: center;
     }
     .button{
@@ -407,7 +277,7 @@ background: #ef139a;
     .button:hover i{
         transform: scale(1.5);
         color: white;
-        
+       
     }
     .button::before
     {
@@ -419,7 +289,7 @@ background: #ef139a;
         transform: rotate(45deg);
         left: -110%;
         top: 90%;
-        
+       
     }
     .button:hover::before{
         animation: aaa .7s 1;
@@ -432,7 +302,7 @@ background: #ef139a;
             left: -110%;
         top: 90%;
                     }
-    
+   
     50%{
            left: 10%;
         top: -30%;
@@ -440,496 +310,643 @@ background: #ef139a;
     100%{
         top: -50%;
         left: -10%;
-    }            
-
+    }           
     }
-       
-        footer
+      
+        .contact
         {
-            background-color: deeppink;
+            background-image: linear-gradient(to right,rgba(82, 154, 10, 0.9),rgba( 108, 203, 12, 0.9 ),rgba( 108, 203, 12, 0.7 ),rgba(147, 255, 38, 0.66),rgba( 108, 203, 12, 0.7 ),rgba( 108, 203, 12, 0.9 ),rgba(82, 154, 10, 0.9));
+            height:580px;
+          
            
-     
-            
         }
-        
-    @keyframes glow {
+     
+    @keyframes glow1 {
   from {
-    box-shadow: 0 0 10px -10px purple;
+    box-shadow: 0 0 10px -10px rgba(102, 255, 6, 0.86);
   }
   to {
-    box-shadow: 0 0 10px 10px #d465a1;
+    box-shadow: 0 0 10px 20px #58a30c;
   }
-}    
+} 
+        .navbar-brand
+        {
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        @keyframes glow{
+            from{
+                text-shadow: 0 0 1px #51b10b,0 0 3px #51b10b,0 0 5px #51b10b,0 0 10px #51b10b,0 0 15px #51b10b,0 0 20px #51b10b,0 0 25px #51b10b;
+            }
+            to
+            {
+                text-shadow: 0 0 20px #bf47bf,0 0 30px red,0 0 40px green,0 0 50px green,0 0 60px yellow,0 0 70px yellow,0 0 80px yellow;
+            }
+        }
    .contentdiv
         {
-            height:300px;
-            font-size:36px; 
-            text-align: center; 
+            height:200px;
+            font-size:36px;
+            text-align: center;
             color: #4a4aa7;
             font-family: 'Dancing Script', cursive;
-            background-image: url(img/contentimg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
             
         }
+        .card img:hover
+        {
+            transform: scale(1.1);
+        }
+       
+        .cart
+        {
+            text-decoration: none;
+            padding: 12px;background-color: orange;border-radius: 30px; color: white;font-family: 'Roboto', sans-serif;position: relative;left: 15em;bottom: 2em;
+            font-weight: bold;
+            cursor: pointer;
+           box-shadow: 5px 5px 10px gray;
+        }
+        .cart:hover
+        {
+            color: black;
+            text-decoration: none;
+            background-color: #ddd;
+           
+            
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+        }
+        .header{
+            overflow: hidden;
+            background-color: white;
+            padding: 20px 10px;
+            position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; 
+            z-index: 30;
+            
+        }
+        .header a{
+            float:left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 25px;
+            line-height: 25px;
+            border-radius: 4px;
+            font-weight: bolder;
+            font-family: 'Merienda', cursive;
+            
+        }
+        .header a.logo{
+            font-size:30px;
+            font-weight: bolder;
+        }
+        .header a:hover{
+           transform: scale(1.19);
+            color: white;
+        }
+        .header a.active{
+            background-color: dodgerblue;
+            color: black;
+        }
+        .header-right {
+  float: right;
+}
 
+@media screen and (max-width: 600px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+  
+  .header-right {
+    float: none;
+  }
+}
+       @keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+        h4{
+            font-family: 'Trocchi', serif;
+            font-size: 20px;
+        }
+        .flip-card{
+            background-color: transparent;
+            width: 250px;
+            height: 250px;
+            perspective: 1000px;
+        }
+        .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #106709;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+        
     </style>
-
+    
 </head>
-
 <body>
-
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    
+<!--        <div class="container-fluid">-->
+<!--
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Food Ninjas</a>
+                <a class="navbar-brand" href="#" style="font-size: 55px;margin: 30px;font-weight: bolder;font-family: 'Shojumaru', cursive;color:black">Food Ninjas</a>
             </div>
-            <ul class="nav navbar-nav">
-                <li><a href="#starters">Starters</a></li>
-                <li><a href="#mains">Veg Mains</a></li>
-                <li><a href="#pizzas">Pizzas</a></li>
-                <li><a href="#burgers">Burgers and wraps</a></li>
-                <li><a href="#desserts">Desserts</a></li>
-                <li><a href="#" class="login">Login/Signup</a></li>
-            </ul>
-        </div>
-    </nav>
-
+-->
+            <div class="header">
+             <a href="#" class="logo" style="font-size: 50px;font-weight: bolder;font-family: 'Shojumaru', cursive;color:black;animation: glow 1s ease-in-out infinite alternate;">Food Ninjas</a>
+            <div class="header-right">
+               <a href="login.html" style="color: black;border:3px solid green;" class="">Login/Signup</a>
+                <a href="#starters" style="color: black">Starters</a>
+                <a href="#mains" style="color: black">Veg Mains</a>
+                <a href="#pizzas" style="color: black">Pizzas</a>
+                <a href="#burgers" style="color: black">Burgers and wraps</a>
+                <a href="#desserts" style="color: black">Desserts</a>
+               
+                
+                </div></div>
+       
+   
     <div class="containerimg">
 
-
-
  <input type="radio" id="id1" name="images" checked />
-
         <input type="radio" id="id2" name="images" />
-
         <input type="radio" id="id3" name="images" />
-
         <input type="radio" id="id4" name="images" />
-
         <input type="radio" id="id5" name="images" />
 
-
-
         <div class="slide_img" id="one">
-
             <img src="img/img1.jpg">
-
         </div>
-
-
 
         <div class="slide_img" id="two">
-
             <img src="img/img2.jpg">
-
         </div>
 
-
-
         <div class="slide_img" id="three">
-
             <img src="img/img3.jpg">
         </div>
 
-
-
         <div class="slide_img" id="four">
-
             <img src="img/img4.jpg">
-
         </div>
-
-
 
         <div class="slide_img" id="five">
-
             <img src="img/img5.jpg">
-
         </div>
-
-
 
         <div id="nav_slide">
-
             <label for="id1" class="dots" id="dot1"></label>
-
             <label for="id2" class="dots" id="dot2"></label>
-
             <label for="id3" class="dots" id="dot3"></label>
-
             <label for="id4" class="dots" id="dot4"></label>
-
             <label for="id5" class="dots" id="dot5"></label>
-
         </div>
 
-
     </div>
-    
+   
 <div  class="contentdiv" ><p class="content">  Offering you a wide range of Food.Big City Variety,small Town price.</p> </div>
-
-  <div id="parallax0" class="parallax" > <a href="#starters">Starter</a></div>
+  <div id="parallax0" class="parallax" > <a href="#starters" style="text-decoration: none;font-family: 'Berkshire Swash', cursive;">Starter</a></div>
     <div   class="contentdiv" ><p class="content">Have you had your break today? Order our mouth watering veg mains dishes to make your break tasty.</p></div>
 
 
-
-
-<div id="parallax1" class="parallax" ><a href="#mains">Veg Mains</a></div>
+<div id="parallax1" class="parallax" ><a href="#mains" style="font-family: 'Berkshire Swash', cursive;left:35%">Veg Mains</a></div>
    <div  class="contentdiv" ><p class="content">What's your eating mood today? Ordering your favourite food is just a click away.</p></div>
 
 
-
-
-<div id="parallax2" class="parallax"><a href="#pizzas">Pizzas</a></div>
-
+<div id="parallax2" class="parallax"><a href="#pizzas" style="font-family: 'Berkshire Swash', cursive;">Pizzas</a></div>
     <div  class="contentdiv"><p class="content">Serving a lip-smacking food is our passion.The flavours come from the culture of nature.We take the teachings of nature.</p></div>
 
 
-
-
-<div id="parallax3" class="parallax"><a href="#burgers"> Burgers and wraps </a></div>
+<div id="parallax3" class="parallax"><a href="#burgers" style="font-family: 'Berkshire Swash', cursive;left:25%"> Burgers and wraps </a></div>
     <div  class="contentdiv" ><p class="content"> We care for your precious time.Hot, tasty food will reach you in 20mins.A hungry must not go to food the food will go to hungry.Get served as an emperor.</p></div>
-
-    <div id="parallax4" class="parallax"><a href="#desserts">Desserts</a></div>
+    <div id="parallax4" class="parallax"><a href="#desserts" style="font-family: 'Berkshire Swash', cursive;">Desserts</a></div>
     <div   class="contentdiv"><p class="content">Start your food journey with Food Ninjas today!!</p></div>
 
-
-    <h2 id="starters">Starters</h2>
-
+    <h2 id="starters" style="font-family: 'Rye', cursive;font-size: 50px;">Starters</h2>
 <div class="container-fluid">
-<div class="row"> 
+<div class="row">
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/paneertikka.jpg" alt="Starters" style="width:100%; height: 200px">
   <div class="cardimg">
-    <h4><b>Paneer Tikka</b></h4>
-    <p>350 Rs.</p>
+    <h4 style="font-family: 'Trocchi', serif;
+"><b>Paneer Tikka</b></h4>
+    <p style="font-weight: bolder">350 Rs.</p>
+      <a class="cart">Add to Cart</a>
+  
   </div>
 </div>
-    
+   
    </div>
-
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/cheesyballs.jpg" alt="Starters" style="width:100% ;height: 200px">
   <div class="cardimg">
     <h4><b>Cheesy Balls</b></h4>
-    <p>375 Rs.</p>
+    <p style="font-weight: bolder">375 Rs.</p>
+      <a class="cart">Add to Cart</a>
+     
   </div>
 </div>
-    
+   
    </div>
-    
+   
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/breadroll.png" alt="Starters" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Bread Roll</b></h4>
-    <p>250 Rs.</p>
+    <p style="font-weight: bolder">250 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div> 
-
+   
+   </div>
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/chillipotato.jpg" alt="Starters" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Honey Chilli Potato</b></h4>
-    <p>450 Rs.</p>
+    <p style="font-weight: bolder">450 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div>     
-    
+   
+   </div>    
+   
     </div>
     </div>
-    
-<br><br><br><br>    
-
-    
-    <h2 id="mains">Veg Mains</h2>
-
+   
+<br><br><br><br>   
+   
+    <h2 id="mains" style="font-family: 'Rye', cursive;font-size: 50px;
+">Veg Mains</h2>
 <div class="container-fluid">
-<div class="row"> 
+<div class="row">
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/vegpulao.jpg" alt="Mains" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Veg Pulao</b></h4>
-    <p>400 Rs.</p>
+    <p  style="font-weight: bolder">400 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/vegnoodles.jpg" alt="Mains" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Veg Noodles</b></h4>
-    <p>450 Rs.</p>
+    <p style="font-weight: bolder">450 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-    
+   
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/vegrice.jpg" alt="Mains" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Veg Rice</b></h4>
-    <p>380 Rs.</p>
+    <p style="font-weight: bolder">380 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div> 
-
+   
+   </div>
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/vegparatha.jpg" alt="Mains" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Veg Paratha</b></h4>
-    <p>225 Rs.</p>
+    <p style="font-weight: bolder">225 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div>     
-    
+   
+   </div>    
+   
     </div>
     </div>
-    
-    <br><br><br><br> 
-    
-    
-    <h2 id="pizzas">Pizzas</h2>
-
+   
+    <br><br><br><br>
+   
+   
+    <h2 id="pizzas" style="font-family: 'Rye', cursive;
+font-size: 50px;">Pizzas</h2>
 <div class="container-fluid">
-<div class="row"> 
+<div class="row">
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/cheesepizza.jpg" alt="Pizzas" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Cheese Burst </b></h4>
-    <p>545 Rs.</p>
+    <p style="font-weight: bolder">545 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/italianpizza.jpg" alt="Pizzas" style="width:100%; height: 200px;">
   <div class="cardimg">
     <h4><b>Italian</b></h4>
-    <p>490 Rs.</p>
+    <p style="font-weight: bolder">490 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-    
+   
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/deluxe.jpg" alt="Pizzas" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Deluxe supreme veggie</b></h4>
-    <p>595 Rs.</p>
+    <p style="font-weight: bolder">595 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div> 
-
+   
+   </div>
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/paneerpizza.jpg" alt="Pizzas" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Peppy paneer</b></h4>
-    <p>600 Rs.</p>
+    <p style="font-weight: bolder">600 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div>     
-    
+   
+   </div>    
+   
     </div>
     </div>
-    
-    <br><br><br><br> 
-
-    
-    <h2 id="burgers">Burgers and wraps</h2>
-
+   
+    <br><br><br><br>
+   
+    <h2 id="burgers" style="font-family: 'Rye', cursive;
+font-size: 50px;">Burgers and wraps</h2>
 <div class="container-fluid">
-<div class="row"> 
+<div class="row">
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/cheeseburger.png" alt="Burgers" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Chilli cheese burger</b></h4>
-    <p>340 Rs.</p>
+    <p style="font-weight: bolder">340 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/frenchburger.jpg" alt="Burgers" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>French Onion dip</b></h4>
-    <p>450 Rs.</p>
+    <p style="font-weight: bolder">450 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-    
+   
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/crispyveg.jpg" alt="Burgers" style="width:100%"; height="200px">
   <div class="cardimg">
     <h4><b>Crispy Veg</b></h4>
-    <p>550 Rs.</p>
+    <p style="font-weight: bolder">550 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div> 
-
+   
+   </div>
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/wrap.jpg" alt="Burgers" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Crispy Veg Wrap</b></h4>
-      <p>550 Rs.</p>
-      
+      <p style="font-weight: bolder">550 Rs.</p>
+      <a class="cart">Add to Cart</a>
+     
   </div>
 </div>
-    
-   </div>     
-    
+   
+   </div>    
+   
     </div>
     </div>
-    
-    <br><br><br><br> 
-
-    
-    <h2 id="desserts">Desserts</h2>
-
+   
+    <br><br><br><br>
+   
+    <h2 id="desserts"style="font-family: 'Rye', cursive;
+font-size: 50px;">Desserts</h2>
 <div class="container-fluid">
-<div class="row"> 
+<div class="row">
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/cakes.jpg" alt="Desserts" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Cakes</b></h4>
-    <p>200-1000 Rs.</p>
+    <p style="font-weight: bolder">200-1000 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/cookies.jpg" alt="Desserts" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Cookies</b></h4>
-    <p>90-200 Rs.</p>
+    <p style="font-weight: bolder">90-200 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
+   
    </div>
-    
+   
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/icecream.jpg" alt="Desserts" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Ice Cream</b></h4>
-    <p>50-500 Rs.</p>
+    <p style="font-weight: bolder">50-500 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div> 
-
+   
+   </div>
 <div class="col-lg-3 col-md-6 col-sm-12">
 <div class="card">
   <img src="img/cupcakes.jpg" alt="Desserts" style="width:100%; height: 200px">
   <div class="cardimg">
     <h4><b>Cup Cakes</b></h4>
-    <p>100-700 Rs.</p>
+    <p style="font-weight: bolder">100-700 Rs.</p>
+      <a class="cart">Add to Cart</a>
   </div>
 </div>
-    
-   </div>     
-    
+   
+   </div>    
+   
     </div>
     </div>
-    
-    <br><br><br><br>
+   
+    <br><br><br>
+<br>
      <br><br><br><br>
     <br><br><br><br>
-    
-
+   
     <footer>
         <div class="contact">
-    <h2> Contact Details</h2>
+    <h2 style="text-align: center;font-family: 'Berkshire Swash';font-size: 40px;font-weight: bold"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;Contact Details</h2>
     <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="customdiv">
-            <img src="img/heena.png" width="100%"; style="border-radius: 50%"; height="70px">
-                <div>
-                 <h4 style="text-align: center; font-family: 'Abril Fatface', cursive;color: white">Heena Motiyani</h4>
-                    <br>
+           
+            <div class="flip-card" style="position: absolute;left:160px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/heenaphoto.jpeg" alt="Avatar" style="width: 250px;height: 250px;">
+                        <h2 style="font-weight: bold;font-family: 'Calistoga', cursive;">Heena Motiyani</h2>
+                    </div>
+                    <div class="flip-card-back">
+                       <br>
+                        <br>
+                        <br>
+                        
+                        <p style="font-size:  30px;font-weight: bold">B.Tech-(CSE)</p>
+                        <p style="font-size:  20px;font-weight: bold">heena.motiyani_cs17<br>@gla.ac.in</p>
+                    </div>
                 </div>
+            </div>
+      
+            </div>
+           
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="flip-card" style="position: absolute;left:140px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/meetanshi.jpg" alt="Avatar" style="width: 250px;height: 250px;">
+                        <h2 style="font-weight: bold;font-family: 'Calistoga', cursive;">Meetanshi Gupta</h2>
+                    </div>
+                    <div class="flip-card-back">
+                        <br>
+                        <br>
+                        <br>
+                        <p style="font-size:  30px;font-weight: bold">B.Tech-(CSE)</p>
+                        <p style="font-size:  20px;font-weight: bold">meetanshi.gupta_cs17
+                        <br>@gla.ac.in</p>
+                    </div>
                 </div>
+            </div>
+      
+            </div>
+           
+           
+        <div class="col-lg-4 col-md-6 col-sm-12">
+           
+           <div class="flip-card" style="position: absolute;right: 160px;">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="img/megha.jpg" alt="Avatar" style="width: 250px;height: 250px;">
+                        <h2 style="font-weight: bold;font-family: 'Calistoga', cursive;">Megha Agarwal</h2>
+                    </div>
+                    <div class="flip-card-back">
+                       <br>
+                        <br>
+                        <br>
+                        
+                        <p style="font-size:  30px;font-weight: bold">B.Tech-(CSE)</p>
+                        <p style="font-size:  20px;font-weight: bold">megha.agarwal_cs17<br>@gla.ac.in</p>
+                    </div>
+                </div>
+            </div>
+      
+            </div>
+            
+    
        
-            </div>
-            
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            <div class="customdiv">
-            <img src="img/contact.png" width="100%"; style="border-radius: 50%"; height="70px">
-            <div>
-                <h4 style="text-align: center; font-family: 'Abril Fatface'; color: white">Meetanshi Gupta</h4>
-                <br>
-                </div>    
-            </div>
-            </div>
-            
-            
-        <div class="col-lg-4 col-md-6 col-sm-12">
-            
-            
-            <div class="customdiv">
-                 
-            <img src="img/meetanshi.png" width="100%"; style="border-radius: 50%"; height="70px">
-            <h4 style="text-align: center; font-family: 'Abril Fatface'; color: white">Megha Agarwal</h4>
-                <br>
-                
-            
-                </div>
-            <div class="back" style="visibility: hidden;">
-                <h4> Btech 3rd year</h4>
-                <p>megha.agarwal_cs17@gla.ac.in</p>
-                </div>
-                   
-            </div>
-            </div>
-    <br><br>    
-        
-<div class="social">
-    
-      <h2>  Follow us at</h2>
-    
+<div class="social" style="position:relative;
+ top:350px;">
+  
+   
+      <h2 style="text-align: center;font-family:'Berkshire Swash';font-weight: bold;
+      font-size: 40px;"> Follow us at</h2>
+   
     <div class="center">
        <a href="" class="button"><i class="fa fa-facebook" ></i></a>
        <a href="" class="button"><i class="fa fa-twitter" ></i></a>
        <a href="" class="button"><i class="fa fa-google" ></i></a>
        <a href="" class="button"><i class="fa fa-youtube" ></i></a>
        <a href="" class="button"><i class="fa fa-instagram" ></i></a>
-       
-       
-       
+      
+      
+      
    </div>
-        
+       
         </div>
+        </div>
+       
+       
         
+       
     </footer>
     
+
+
+
+   
+   
 </body></html>
